@@ -24,7 +24,7 @@ renders
     難
     <rt>むずか</rt>
 </ruby>
-しい
+しい。
 ```
 
 ### Props
