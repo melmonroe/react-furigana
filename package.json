@@ -1,6 +1,6 @@
 {
   "name": "react-furigana",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple React component for handling Japanese text with furigana.",
   "repository": {
     "type": "git",
@@ -9,6 +9,15 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
+  "keywords": [
+    "japanese",
+    "furigana",
+    "日本語",
+    "ふりがな",
+    "振り仮名",
+    "ruby",
+    "react"
+  ],
   "type": "module",
   "main": "./dist/react-furigana.umd.cjs",
   "module": "./dist/react-furigana.js",

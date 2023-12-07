@@ -12,9 +12,24 @@ function MyComponent() {
 }
 ```
 
+renders
+
+```html
+<ruby>
+    漢字
+    <rt>かんじ</rt>
+</ruby>
+は
+<ruby>
+    難
+    <rt>むずか</rt>
+</ruby>
+しい
+```
+
 ### Props
 
 - **text** (required): the Japanese text to be processed.
 - **separator** (optional, default: `' '`): used to split the input text into individual kanji.
-- **leftBracket** (optional, default: `'['`): used to indicate the start of furigana in a word.
-- **rightBracket** (optional, default: `']'`): used to indicate the end of furigana in a word.
+- **leftBracket** (optional, default: `'['`): used to indicate the start of furigana.
+- **rightBracket** (optional, default: `']'`): used to indicate the end of furigana.
