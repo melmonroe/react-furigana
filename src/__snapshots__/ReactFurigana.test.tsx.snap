@@ -5,6 +5,14 @@ exports[`ReactFurigana > renders 1`] = `
   "asFragment": [Function],
   "baseElement": <body>
     <div>
+      日本
+      <ruby>
+        語
+        <rt>
+          ご
+        </rt>
+      </ruby>
+      の
       <ruby>
         漢字
         <rt>
@@ -18,24 +26,20 @@ exports[`ReactFurigana > renders 1`] = `
           むずか
         </rt>
       </ruby>
-      しいので、ふりがなを
-      <ruby>
-        振
-        <rt>
-          ふ
-        </rt>
-      </ruby>
-      る
-      <ruby>
-        方
-        <rt>
-          ほう
-        </rt>
-      </ruby>
-      がいいです。
+      し
+      い
+      。
     </div>
   </body>,
   "container": <div>
+    日本
+    <ruby>
+      語
+      <rt>
+        ご
+      </rt>
+    </ruby>
+    の
     <ruby>
       漢字
       <rt>
@@ -49,21 +53,9 @@ exports[`ReactFurigana > renders 1`] = `
         むずか
       </rt>
     </ruby>
-    しいので、ふりがなを
-    <ruby>
-      振
-      <rt>
-        ふ
-      </rt>
-    </ruby>
-    る
-    <ruby>
-      方
-      <rt>
-        ほう
-      </rt>
-    </ruby>
-    がいいです。
+    し
+    い
+    。
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

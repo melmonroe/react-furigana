@@ -4,6 +4,6 @@ import ReactFurigana from './index.ts';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <ReactFurigana text="漢字[かんじ]は 難[むずか]しいので、ふりがなを 振[ふ]る 方[ほう]がいいです。"/>
+        <ReactFurigana text="日本 語[ご]の漢字[かんじ]は難[むずか]しい。"/>
     </React.StrictMode>
 );

@@ -1,6 +1,6 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`Word > renders with furigana 1`] = `
+exports[`Ruby > renders with furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
@@ -11,7 +11,6 @@ exports[`Word > renders with furigana 1`] = `
           かんじ
         </rt>
       </ruby>
-      は難しい。
     </div>
   </body>,
   "container": <div>
@@ -21,7 +20,6 @@ exports[`Word > renders with furigana 1`] = `
         かんじ
       </rt>
     </ruby>
-    は難しい。
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -77,16 +75,16 @@ exports[`Word > renders with furigana 1`] = `
 }
 `;
 
-exports[`Word > renders without furigana 1`] = `
+exports[`Ruby > renders without furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      漢字[かんじ]は難しい。
+      漢字
     </div>
   </body>,
   "container": <div>
-    漢字[かんじ]は難しい。
+    漢字
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -142,16 +140,26 @@ exports[`Word > renders without furigana 1`] = `
 }
 `;
 
-exports[`Word > renders without furigana 2`] = `
+exports[`Token > renders with furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      漢字[かんじ]は難しい。
+      <ruby>
+        漢字
+        <rt>
+          かんじ
+        </rt>
+      </ruby>
     </div>
   </body>,
   "container": <div>
-    漢字[かんじ]は難しい。
+    <ruby>
+      漢字
+      <rt>
+        かんじ
+      </rt>
+    </ruby>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -207,16 +215,16 @@ exports[`Word > renders without furigana 2`] = `
 }
 `;
 
-exports[`Word > renders without furigana 3`] = `
+exports[`Token > renders without furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      漢字[かんじ]は難しい。
+      漢字
     </div>
   </body>,
   "container": <div>
-    漢字[かんじ]は難しい。
+    漢字
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
