@@ -5,12 +5,16 @@ export type Token = {
 
 export class Tokenizer {
 
+    private static readonly hiraganaRanges = [[0x3040, 0x309F]];
+    private static readonly punctuationsMarksRanges = [[0x3000, 0x303F], [0xFF00, 0xFF0F], [0xFF1A, 0xFF65],
+        [0xFFA0, 0xFFEF]];
+
     private readonly text: string;
     private readonly separator: string;
     private readonly leftBracket: string;
     private readonly rightBracket: string;
 
-    private tokens: Token[] = [];
+    private readonly tokens: Token[] = [];
     private currentKanji = '';
     private currentFurigana: string | undefined;
 
@@ -46,7 +50,7 @@ export class Tokenizer {
             this.addToken();
         } else {
             this.currentKanji += character;
-            if (!this.allowsFurigana(character)) {
+            if (!Tokenizer.allowsFurigana(character)) {
                 this.addToken();
             }
         }
@@ -60,20 +64,21 @@ export class Tokenizer {
         }
     }
 
-    private allowsFurigana(character: string) {
-        return !this.isHiragana(character) && !this.isPunctuation(character);
-    }
-
-    private isHiragana(character: string) {
+    private static allowsFurigana(character: string) {
         const unicode = character.charCodeAt(0);
-        const hiraganaRange1 = [0x3040, 0x309F];
-        const hiraganaRange2 = [0x1B000, 0x1B0FF];
-        return (unicode >= hiraganaRange1[0] && unicode <= hiraganaRange1[1])
-            || (unicode >= hiraganaRange2[0] && unicode <= hiraganaRange2[1]);
+        return !Tokenizer.isHiragana(unicode) && !Tokenizer.isPunctuationMark(unicode);
     }
 
-    private isPunctuation(character: string) {
-        return ['、', '。', '「', '」', '『', '』', '・', '。', '？', '！', '／'].includes(character);
+    private static isHiragana(unicode: number) {
+        return Tokenizer.isInRange(unicode, Tokenizer.hiraganaRanges);
+    }
+
+    private static isPunctuationMark(unicode: number) {
+        return Tokenizer.isInRange(unicode, Tokenizer.punctuationsMarksRanges);
+    }
+
+    private static isInRange(unicode: number, ranges: number[][]) {
+        return ranges.some(range => unicode >= range[0] && unicode <= range[1]);
     }
 
     private addToken() {
