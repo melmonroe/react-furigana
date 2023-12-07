@@ -1,6 +1,6 @@
 {
   "name": "react-furigana",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple React component for handling Japanese text with furigana.",
   "repository": {
     "type": "git",
