@@ -17,12 +17,16 @@ renders
 ```html
 <ruby>
     漢字
-    <rt>かんじ</rt>
+    <rt>
+        かんじ
+    </rt>
 </ruby>
 は
 <ruby>
     難
-    <rt>むずか</rt>
+    <rt>
+        むずか
+    </rt>
 </ruby>
 しい。
 ```
