@@ -6,13 +6,13 @@ describe('WordWithFurigana', () => {
 
     it('renders without remaining text', () => {
         expect(render(
-            <WordWithFurigana text="漢字[かんじ]" leftBracketIndex={2} rightBracketIndex={6}/>
+            <WordWithFurigana word="漢字[かんじ]" leftBracketIndex={2} rightBracketIndex={6}/>
         )).toMatchSnapshot();
     });
 
     it('renders with remaining text', () => {
         expect(render(
-            <WordWithFurigana text="漢字[かんじ]は難しい。" leftBracketIndex={2} rightBracketIndex={6}/>
+            <WordWithFurigana word="漢字[かんじ]は難しい。" leftBracketIndex={2} rightBracketIndex={6}/>
         )).toMatchSnapshot();
     });
 });

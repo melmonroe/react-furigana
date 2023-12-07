@@ -1,16 +1,16 @@
 import Ruby from './Ruby.tsx';
 
 type WordWithFuriganaProps = {
-    text: string,
+    word: string,
     leftBracketIndex: number,
     rightBracketIndex: number
 }
 
 export default function WordWithFurigana(props: WordWithFuriganaProps) {
 
-    const kanji = props.text.slice(0, props.leftBracketIndex);
-    const furigana = props.text.slice(props.leftBracketIndex + 1, props.rightBracketIndex);
-    const remainingText = props.text.slice(props.rightBracketIndex + 1, props.text.length);
+    const kanji = props.word.slice(0, props.leftBracketIndex);
+    const furigana = props.word.slice(props.leftBracketIndex + 1, props.rightBracketIndex);
+    const remainingText = props.word.slice(props.rightBracketIndex + 1, props.word.length);
 
     return (
         <>

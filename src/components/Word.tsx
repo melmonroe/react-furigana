@@ -1,19 +1,19 @@
 import WordWithFurigana from './WordWithFurigana.tsx';
 
 type WordProps = {
-    text: string,
+    word: string,
     leftBracket: string,
     rightBracket: string
 }
 
 export default function Word(props: WordProps) {
 
-    const leftBracketIndex = props.text.indexOf(props.leftBracket);
-    const rightBracketIndex = props.text.indexOf(props.rightBracket);
+    const leftBracketIndex = props.word.indexOf(props.leftBracket);
+    const rightBracketIndex = props.word.indexOf(props.rightBracket);
 
     if (leftBracketIndex > 0 && rightBracketIndex > 0) {
         return (
-            <WordWithFurigana text={props.text}
+            <WordWithFurigana word={props.word}
                               leftBracketIndex={leftBracketIndex} rightBracketIndex={rightBracketIndex}
             />
         );
@@ -21,7 +21,7 @@ export default function Word(props: WordProps) {
 
     return (
         <>
-            {props.text}
+            {props.word}
         </>
     );
 

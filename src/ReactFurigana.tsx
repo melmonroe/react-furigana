@@ -19,8 +19,8 @@ export function ReactFurigana(props: ReactFuriganaProps) {
 
     return (
         <>
-            {props.text.split(separator).map((input, index) => (
-                <Word key={index} text={input} leftBracket={leftBracket} rightBracket={rightBracket}/>
+            {props.text.split(separator).map((word, index) => (
+                <Word key={index} word={word} leftBracket={leftBracket} rightBracket={rightBracket}/>
             ))}
         </>
     );
