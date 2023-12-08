@@ -5,9 +5,10 @@ export type Token = {
 
 export class Tokenizer {
 
+    //Source: http://www.rikai.com/library/kanjitables/kanji_codes.unicode.shtml
     private static readonly hiraganaRanges = [[0x3040, 0x309F]];
-    private static readonly punctuationsMarksRanges = [[0x3000, 0x303F], [0xFF00, 0xFF0F], [0xFF1A, 0xFF65],
-        [0xFFA0, 0xFFEF]];
+    private static readonly punctuationsMarksRanges = [[0x3000, 0x3004], [0x3006, 0x303F], [0xFF00, 0xFF0F],
+        [0xFF1A, 0xFF65], [0xFFA0, 0xFFEF]];
 
     private readonly text: string;
     private readonly separator: string;

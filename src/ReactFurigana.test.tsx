@@ -10,4 +10,11 @@ describe('ReactFurigana', () => {
         )).toMatchSnapshot();
     });
 
+    it('々 renders', () => {
+        expect(render(
+            <ReactFurigana text="様々[さまざま]"/>
+        )).toMatchSnapshot();
+    });
+
+
 });
