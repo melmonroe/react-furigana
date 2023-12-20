@@ -1,61 +1,25 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`ReactFurigana > renders 1`] = `
+exports[`TokenDisplay > renders with furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      日本
-      <ruby>
-        語
-        <rt>
-          ご
-        </rt>
-      </ruby>
-      の
       <ruby>
         漢字
         <rt>
           かんじ
         </rt>
       </ruby>
-      は
-      <ruby>
-        難
-        <rt>
-          むずか
-        </rt>
-      </ruby>
-      し
-      い
-      。
     </div>
   </body>,
   "container": <div>
-    日本
-    <ruby>
-      語
-      <rt>
-        ご
-      </rt>
-    </ruby>
-    の
     <ruby>
       漢字
       <rt>
         かんじ
       </rt>
     </ruby>
-    は
-    <ruby>
-      難
-      <rt>
-        むずか
-      </rt>
-    </ruby>
-    し
-    い
-    。
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -111,101 +75,16 @@ exports[`ReactFurigana > renders 1`] = `
 }
 `;
 
-exports[`ReactFurigana > renders 2`] = `
+exports[`TokenDisplay > renders without furigana 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <ruby>
-        様々
-        <rt>
-          さまざま
-        </rt>
-      </ruby>
+      漢字
     </div>
   </body>,
   "container": <div>
-    <ruby>
-      様々
-      <rt>
-        さまざま
-      </rt>
-    </ruby>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`ReactFurigana > 々 renders 1`] = `
-{
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <ruby>
-        様々
-        <rt>
-          さまざま
-        </rt>
-      </ruby>
-    </div>
-  </body>,
-  "container": <div>
-    <ruby>
-      様々
-      <rt>
-        さまざま
-      </rt>
-    </ruby>
+    漢字
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

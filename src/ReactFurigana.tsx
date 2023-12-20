@@ -1,4 +1,4 @@
-import Token from './components/Token.tsx';
+import TokenDisplay from './components/TokenDisplay.tsx';
 import {Tokenizer} from './tokenizer.ts';
 import React from 'react';
 
@@ -18,7 +18,7 @@ export function ReactFurigana(props: ReactFuriganaProps) {
     return (
         <>
             {tokens.map((token, index) => (
-                <Token key={index} token={token}/>
+                <TokenDisplay key={index} token={token}/>
             ))}
         </>
     );
