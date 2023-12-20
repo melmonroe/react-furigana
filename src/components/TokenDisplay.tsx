@@ -1,5 +1,5 @@
-import Ruby from './Ruby.tsx';
 import {Token} from '../tokenizer.ts';
+import Ruby from './Ruby.tsx';
 
 type TokenDisplayProps = {
     token: Token;
