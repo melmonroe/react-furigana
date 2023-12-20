@@ -16,5 +16,22 @@ describe('ReactFurigana', () => {
         )).toMatchSnapshot();
     });
 
+    it('renders with a custom render function', () => {
+        expect(render(
+            <ReactFurigana
+                text="日本語[にほんご]"
+                render={token => (
+                    <div>
+                        <span className="kanji">
+                            {token.kanji}
+                        </span>
+                            <span className="furigana">
+                            {token.furigana}
+                        </span>
+                    </div>
+                )}
+            />
+        )).toMatchSnapshot();
+    });
 
 });

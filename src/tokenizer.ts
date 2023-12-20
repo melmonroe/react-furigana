@@ -83,6 +83,10 @@ export class Tokenizer {
     }
 
     private addToken() {
+        if (!this.currentKanji) {
+            return;
+        }
+
         this.tokens.push({
             kanji: this.currentKanji,
             furigana: this.currentFurigana
