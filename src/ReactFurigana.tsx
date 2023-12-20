@@ -1,6 +1,6 @@
+import React from 'react';
 import TokenDisplay from './components/TokenDisplay.tsx';
 import {Tokenizer} from './tokenizer.ts';
-import React from 'react';
 
 type ReactFuriganaProps = {
     text: string,

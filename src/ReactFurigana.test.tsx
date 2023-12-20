@@ -1,6 +1,6 @@
-import ReactFurigana from './index.ts';
-import {describe, expect, it} from 'vitest';
 import {render} from '@testing-library/react';
+import {describe, expect, it} from 'vitest';
+import ReactFurigana from './index.ts';
 
 describe('ReactFurigana', () => {
 
