@@ -1,11 +1,11 @@
 import Ruby from './Ruby.tsx';
-import {Token as TokenType} from '../tokenizer.ts';
+import {Token} from '../tokenizer.ts';
 
-type TokenProps = {
-    token: TokenType;
+type TokenDisplayProps = {
+    token: Token;
 }
 
-export default function Token(props: TokenProps) {
+export default function TokenDisplay(props: TokenDisplayProps) {
 
     if (props.token.furigana) {
         return <Ruby kanji={props.token.kanji} furigana={props.token.furigana}/>;
