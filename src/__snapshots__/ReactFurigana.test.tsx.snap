@@ -111,26 +111,38 @@ exports[`ReactFurigana > renders 1`] = `
 }
 `;
 
-exports[`ReactFurigana > renders 2`] = `
+exports[`ReactFurigana > renders with a custom render function 1`] = `
 {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <ruby>
-        様々
-        <rt>
-          さまざま
-        </rt>
-      </ruby>
+      <div>
+        <span
+          class="kanji"
+        >
+          日本語
+        </span>
+        <span
+          class="furigana"
+        >
+          にほんご
+        </span>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <ruby>
-      様々
-      <rt>
-        さまざま
-      </rt>
-    </ruby>
+    <div>
+      <span
+        class="kanji"
+      >
+        日本語
+      </span>
+      <span
+        class="furigana"
+      >
+        にほんご
+      </span>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
