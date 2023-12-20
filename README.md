@@ -17,7 +17,6 @@ renders
 > <ruby>漢字<rt>かんじ</rt></ruby>は<ruby>難<rt>むずか</rt></ruby>しい。
 
 ```html
-
 <ruby>
     漢字
     <rt>
